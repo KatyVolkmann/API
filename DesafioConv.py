@@ -2,7 +2,7 @@ import requests as request
 import json as conversorJson
 
 
-resposta = request.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL")
+resposta = request.get("https://economia.awesomeapi.com.br/last/USD-BRL")
 
 dolarReal = conversorJson.loads(resposta.content)
 
